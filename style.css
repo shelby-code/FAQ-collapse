@@ -1,0 +1,62 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.faq{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 50px;
+    position: relative;
+    transition: 1s ease;
+}
+
+.btn{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    /* color: honeydew;
+    border-radius: 50%; */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.faq-text{
+    display: none;
+}
+.btn:focus{
+    outline: none;
+}
+.fas.fa-times{
+    display: none;
+}
+
+.faq.active .faq-text{
+    display: block;
+}
+.faq.faq.active .fas.fa-chevron-down{
+    display: none;
+}
+.faq.active .fas.fa-times{
+    display: block;
+    background-color: slategrey;
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+}
